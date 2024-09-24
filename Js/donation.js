@@ -51,13 +51,14 @@ document
     document.getElementById("transaction-history").appendChild(div);
 
     // show modal
-    document.getElementById("pop-up-donation").classList.remove("hidden");
+    // document.getElementById("pop-up-donation").classList.remove("hidden");
+    document.getElementById("my-modal").showModal();
 
     // clear input field
     document.getElementById("input-field-noakhali").value = "";
   });
 
-  //Feni
+//Feni
 document
   .getElementById("btn-donate-now-feni")
   .addEventListener("click", function () {
@@ -110,13 +111,14 @@ document
     document.getElementById("transaction-history").appendChild(div);
 
     // show modal
-    document.getElementById("pop-up-donation").classList.remove("hidden");
+    // document.getElementById("pop-up-donation").classList.remove("hidden");
+    document.getElementById("my-modal").showModal();
 
     // clear input field
     document.getElementById("input-field-feni").value = "";
   });
 
-  // Quota movement
+// Quota movement
 document
   .getElementById("btn-donate-now-quota")
   .addEventListener("click", function () {
@@ -169,7 +171,8 @@ document
     document.getElementById("transaction-history").appendChild(div);
 
     // show modal
-    document.getElementById("pop-up-donation").classList.remove("hidden");
+    // document.getElementById("pop-up-donation").classList.remove("hidden");
+    document.getElementById("my-modal").showModal();
 
     // clear input field
     document.getElementById("input-field-quota").value = "";

@@ -12,8 +12,25 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: ['"Lexend"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-lexend">
     <header class="">
       <nav class="fixed top-0 left-0 right-0 z-50">
         <div class="navbar bg-[rgb(249,247,243)] w-full shadow-md">
@@ -261,6 +278,22 @@
           </div>
         </div>
       </section>
+
+      <dialog id="my-modal" class="modal modal-bottom sm:modal-middle">
+        <div
+          class="modal-box flex flex-col justify-center space-y-3 items-center"
+        >
+          <h2 class="font-bold text-5xl text-black">Congrats!</h2>
+          <img src="Asset/coin.png" height="32" width="32" alt="coin image" />
+          <h4 class="text-lg text-gray">You have Donated for Humankind</h4>
+          <h3 class="font-bold text-2xl text-black">Successfully</h3>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">close confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <footer class="footer bg-[rgb(249,247,243)] mt-12 h-16"></footer>
